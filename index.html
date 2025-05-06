@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #333;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 25px;
+      background: #28a745;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 15px;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      border-left: 4px solid #28a745;
+      padding-left: 15px;
+    }
+
+    .pricing {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .price-card {
+      flex: 1;
+      min-width: 250px;
+      background: #eee;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Aura</h1>
+    <p>A Fragrance That Stay on their Mind.</p>
+    <a href="#contact" class="cta-button">Get Started</a>
+  </header>
+
+  <!-- Testimonials -->
+  <section>
+    <h2>What Our Customers Say</h2>
+    <div class="testimonial">
+      <p>"This product changed my life! Highly recommended."</p>
+      <strong>- Alex J.</strong>
+    </div>
+    <div class="testimonial">
+      <p>"Simple, effective, and affordable."</p>
+      <strong>- Casey M.</strong>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section>
+    <h2>Pricing</h2>
+    <div class="pricing">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <p>$9 / month</p>
+        <p>✔ Feature 1</p>
+        <p>✔ Feature 2</p>
+      </div>
+      <div class="price-card">
+        <h3>Standard</h3>
+        <p>$19 / month</p>
+        <p>✔ Everything in Basic</p>
+        <p>✔ Extra Feature 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+    <!-- Starry background -->
+    <div id="particles-js"></div>
+
+    <!-- Actual content -->
+    <div class="main-content">
+      <h1>Welcome to My Landing Page</h1>
+      <p>Your journey begins here.</p>
+      <!-- باقی content -->
+    </div>
+  
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        "particles": {
+          "number": { "value": 100 },
+          "size": { "value": 2 },
+          "color": { "value": "#ffffff" },
+          "move": { "speed": 0.5 },
+          "line_linked": { "enable": false }
+        },
+        "interactivity": {
+          "events": { "onhover": { "enable": false } }
+        }
+      });
+    </script>
+  
+    <style>
+      #particles-js {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#020111, #000000);
+        z-index: -1;
+      }
+  
+      .main-content {
+        position: relative;
+        z-index: 1;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+      }
+
+  <footer>
+    &copy; 2025 Your Company Name. All rights reserved.
+  </footer>
+
+</body>
+</html>
